@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
+    <Reference Include="Mono.Android.Support.v4" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -57,6 +58,7 @@
     <Compile Include="Screens\YouTubeFailureRecoveryActivity.cs" />
     <Compile Include="Screens\YouTubeApiDemoActivity.cs" />
     <Compile Include="Screens\Adapters\YouTubeApiDemoAdapter.cs" />
+    <Compile Include="Screens\ActionBarActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -72,6 +74,7 @@
     <AndroidResource Include="Resources\layout\FullScreen.axml" />
     <AndroidResource Include="Resources\layout\list_item.axml" />
     <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\ActionBar.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
