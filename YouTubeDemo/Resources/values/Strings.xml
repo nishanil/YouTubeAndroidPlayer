@@ -2,11 +2,17 @@
 <resources>
 	<string name="hello">Hello World, Click Me!</string>
 	<string name="app_name">YouTubeDemo</string>
-
-	 <string name="play_video">Play video</string>
+	<string name="playerview_text">This is a YouTubePlayerView!</string>
+    <string name="playerfragment_text">This is a YouTubePlayerFragment!</string>
+	<string name="play_video">Play video</string>
     <string name="play_playlist">Play playlist</string>
     <string name="start_index">Start index</string>
     <string name="start_time">Start time (sec)</string>
     <string name="autoplay">Autoplay</string>
     <string name="lightbox_mode">Lightbox mode</string>
+	<string name="error_player">There was an error initializing the YouTubePlayer ({0})</string>
+	<string name="fullscreen_tutorial">This is a demo which shows how to handle fullscreen behaviour. This activity has differents layouts for portrait, landscape and fullscreen. The user can enter fullscreen either by using the player controller or programmatically by the programmer (here using a button). If your activity does not have a landscape layout, you can choose to automatically enter fullscreen when the device is rotated to landscape orientation.</string>
+    <string name="enter_fullscreen">Enter Fullscreen</string>
+    <string name="landscape_fullscreen">Always fullscreen in landscape</string>
+
 </resources>

@@ -12,7 +12,7 @@ using Google.YouTube.Player;
 
 namespace YouTubeDemo
 {
-	[Activity (Label = "YouTube Demo", MainLauncher = true)]			
+	[Activity (Label = "YouTube Demo")]			
 	public class StandAloneActivity : Activity
 
 	{
@@ -29,6 +29,22 @@ namespace YouTubeDemo
 		private EditText startTimeEditText;
 		private CheckBox autoplayCheckBox;
 		private CheckBox lightboxModeCheckBox;
+
+		void Play (string id)
+		{
+			int startIndex; 
+			int startTimeMillis; 
+			bool autoplay;
+			bool lightboxMode;
+			int.TryParse (startIndexEditText.Text, out startIndex);
+			int.TryParse (startTimeEditText.Text, out startTimeMillis);
+			startTimeMillis *= 1000;
+			autoplay = autoplayCheckBox.Checked;
+			lightboxMode = lightboxModeCheckBox.Checked;
+			var intent = YouTubeStandalonePlayer.CreateVideoIntent (this, DeveloperKey.Key, id, startTimeMillis, autoplay, lightboxMode);
+			StartActivityForResult (intent, REQ_START_STANDALONE_PLAYER);
+		}
+
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
@@ -42,18 +58,26 @@ namespace YouTubeDemo
 			autoplayCheckBox =   FindViewById<CheckBox>(Resource.Id.autoplay_checkbox);
 			lightboxModeCheckBox = FindViewById<CheckBox>(Resource.Id.lightbox_checkbox);
 
-			playVideoButton.Click += (sender, e) => {
-				 
-				int startIndex; int.TryParse(startIndexEditText.Text, out startIndex);
-				int startTimeMillis; int.TryParse(startTimeEditText.Text, out startTimeMillis);
-				startTimeMillis *= 1000;
-				bool autoplay = autoplayCheckBox.Checked;
-				bool lightboxMode = lightboxModeCheckBox.Checked;
-				var intent = YouTubeStandalonePlayer.CreateVideoIntent(this, DeveloperKey.Key,VIDEO_ID, startTimeMillis, autoplay, lightboxMode);
-				StartActivityForResult(intent, REQ_START_STANDALONE_PLAYER);
-			};
+			playVideoButton.Click += (sender, e) => Play (VIDEO_ID);
 
-			// Create your application here
+			playPlaylistButton.Click += (sender, e) => Play (PLAYLIST_ID);
+
+		}
+
+		protected override void OnActivityResult (int requestCode, Result resultCode, Intent data)
+		{
+			base.OnActivityResult (requestCode, resultCode, data);
+			if (requestCode == REQ_START_STANDALONE_PLAYER && resultCode != Result.Ok) {
+				YouTubeInitializationResult errorReason =
+					YouTubeStandalonePlayer.GetReturnedInitializationResult (data);
+				if (errorReason.IsUserRecoverableError) {
+					errorReason.GetErrorDialog (this, 0).Show ();
+				} else {
+					String errorMessage =
+						String.Format (GetString (Resource.String.error_player), errorReason.ToString ());
+					Toast.MakeText (this, errorMessage, ToastLength.Long).Show ();
+				}
+			}
 		}
 	}
 }
