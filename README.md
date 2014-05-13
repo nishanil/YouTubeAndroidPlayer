@@ -44,12 +44,12 @@ This app uses the static methods in the YouTubeIntents class to create Intents t
 
 # Ported to C# 
 
-This project contains YouTube Android Player API oringinally written in Java by Google which is projected to C# using (Bindings)[http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/]
+This project contains YouTube Android Player API oringinally written in Java by Google which is projected to C# using [Bindings](http://docs.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/)
 
 Solution contains two projects:
 
-- YouTube Android Player API for Xamarin.Android.
-- Samples (again a port from Java)
+- YouTube Android Player API for Xamarin.Android. (YouTubeApi)
+- Samples (again a port from Java) (YouTubeDemo)
 
 Java Samples and YouTube Android Player API is [here](https://developers.google.com/youtube/android/player/downloads/)
 
