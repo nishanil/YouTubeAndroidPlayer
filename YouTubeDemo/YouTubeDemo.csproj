@@ -15,8 +15,6 @@
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>YouTubeDemo</AssemblyName>
     <TargetFrameworkVersion>v4.2</TargetFrameworkVersion>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -59,6 +57,9 @@
     <Compile Include="Screens\YouTubeApiDemoActivity.cs" />
     <Compile Include="Screens\Adapters\YouTubeApiDemoAdapter.cs" />
     <Compile Include="Screens\ActionBarActivity.cs" />
+    <Compile Include="Screens\IntentsActivity.cs" />
+    <Compile Include="Screens\Adapters\IntentsAdapter.cs" />
+    <Compile Include="Screens\PlayerControlsActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -75,6 +76,14 @@
     <AndroidResource Include="Resources\layout\list_item.axml" />
     <AndroidResource Include="Resources\values\Colors.xml" />
     <AndroidResource Include="Resources\layout\ActionBar.axml" />
+    <AndroidResource Include="Resources\layout-land\PlayerView.axml" />
+    <AndroidResource Include="Resources\layout-land\Fragments.axml" />
+    <AndroidResource Include="Resources\layout\Intents.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values-v11\Styles.xml" />
+    <AndroidResource Include="Resources\layout\PlayerControls.axml" />
+    <AndroidResource Include="Resources\layout\PlayerControlsContainer.axml" />
+    <AndroidResource Include="Resources\layout-land\PlayerControls.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -86,5 +95,6 @@
   <ItemGroup>
     <Folder Include="Screens\" />
     <Folder Include="Screens\Adapters\" />
+    <Folder Include="Resources\values-v11\" />
   </ItemGroup>
 </Project>

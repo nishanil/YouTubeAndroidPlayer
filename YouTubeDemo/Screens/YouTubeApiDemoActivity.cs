@@ -25,6 +25,8 @@ namespace YouTubeDemo
 				new DemoItem(){ Id = 3, Title = "Fragment Player Demo", IsEnabled = true },
 				new DemoItem(){ Id = 4, Title = "Full Screen Player Demo", IsEnabled = true },
 				new DemoItem(){ Id = 5, Title = "Action Bar Player Demo", IsEnabled = true },
+				new DemoItem(){ Id = 6, Title = "Intents Activity", IsEnabled = true },
+				new DemoItem(){ Id = 7, Title = "Player Controls Activity", IsEnabled = true },
 
 			};
 
@@ -53,6 +55,13 @@ namespace YouTubeDemo
 			case 5:
 				StartActivity (typeof(ActionBarActivity));
 				break;
+			case 6:
+				StartActivity (typeof(IntentsActivity));
+				break;
+			case 7:
+				StartActivity (typeof(PlayerControlsActivity));
+				break;
+
 			default :
 				Finish ();
 				break;

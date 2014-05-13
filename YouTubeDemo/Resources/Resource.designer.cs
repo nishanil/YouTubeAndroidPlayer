@@ -76,59 +76,95 @@ namespace YouTubeDemo
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060010
-			public const int autoplay_checkbox = 2131099664;
+			// aapt resource value: 0x7f07001c
+			public const int autoplay_checkbox = 2131165212;
 			
-			// aapt resource value: 0x7f060008
-			public const int fullscreen_button = 2131099656;
+			// aapt resource value: 0x7f070013
+			public const int event_log = 2131165203;
 			
-			// aapt resource value: 0x7f060007
-			public const int landscape_fullscreen_checkbox = 2131099655;
+			// aapt resource value: 0x7f070008
+			public const int fullscreen_button = 2131165192;
 			
-			// aapt resource value: 0x7f060004
-			public const int layout = 2131099652;
+			// aapt resource value: 0x7f070009
+			public const int intent_list = 2131165193;
 			
-			// aapt resource value: 0x7f060011
-			public const int lightbox_checkbox = 2131099665;
+			// aapt resource value: 0x7f070007
+			public const int landscape_fullscreen_checkbox = 2131165191;
 			
-			// aapt resource value: 0x7f06000a
-			public const int list_item_disabled_text = 2131099658;
+			// aapt resource value: 0x7f070004
+			public const int layout = 2131165188;
 			
-			// aapt resource value: 0x7f060009
-			public const int list_item_text = 2131099657;
+			// aapt resource value: 0x7f07001d
+			public const int lightbox_checkbox = 2131165213;
 			
-			// aapt resource value: 0x7f060006
-			public const int other_views = 2131099654;
+			// aapt resource value: 0x7f07000c
+			public const int list_item_disabled_text = 2131165196;
 			
-			// aapt resource value: 0x7f060005
-			public const int player = 2131099653;
+			// aapt resource value: 0x7f07000b
+			public const int list_item_text = 2131165195;
 			
-			// aapt resource value: 0x7f060001
-			public const int player_fragment = 2131099649;
+			// aapt resource value: 0x7f070006
+			public const int other_views = 2131165190;
 			
-			// aapt resource value: 0x7f06000e
-			public const int start_index_text = 2131099662;
+			// aapt resource value: 0x7f070016
+			public const int pause_button = 2131165206;
 			
-			// aapt resource value: 0x7f06000d
-			public const int start_playlist_button = 2131099661;
+			// aapt resource value: 0x7f070015
+			public const int play_button = 2131165205;
 			
-			// aapt resource value: 0x7f06000f
-			public const int start_time_text = 2131099663;
+			// aapt resource value: 0x7f070005
+			public const int player = 2131165189;
 			
-			// aapt resource value: 0x7f06000c
-			public const int start_video_button = 2131099660;
+			// aapt resource value: 0x7f070001
+			public const int player_fragment = 2131165185;
 			
-			// aapt resource value: 0x7f060002
-			public const int tutorial_text = 2131099650;
+			// aapt resource value: 0x7f070017
+			public const int skip_to_text = 2131165207;
 			
-			// aapt resource value: 0x7f060000
-			public const int view_container = 2131099648;
+			// aapt resource value: 0x7f07001a
+			public const int start_index_text = 2131165210;
 			
-			// aapt resource value: 0x7f060003
-			public const int youtube_fragment = 2131099651;
+			// aapt resource value: 0x7f070019
+			public const int start_playlist_button = 2131165209;
 			
-			// aapt resource value: 0x7f06000b
-			public const int youtube_view = 2131099659;
+			// aapt resource value: 0x7f07001b
+			public const int start_time_text = 2131165211;
+			
+			// aapt resource value: 0x7f070018
+			public const int start_video_button = 2131165208;
+			
+			// aapt resource value: 0x7f07000d
+			public const int state_text = 2131165197;
+			
+			// aapt resource value: 0x7f070012
+			public const int style_chromeless = 2131165202;
+			
+			// aapt resource value: 0x7f070010
+			public const int style_default = 2131165200;
+			
+			// aapt resource value: 0x7f070011
+			public const int style_minimal = 2131165201;
+			
+			// aapt resource value: 0x7f07000f
+			public const int style_radio_group = 2131165199;
+			
+			// aapt resource value: 0x7f070002
+			public const int tutorial_text = 2131165186;
+			
+			// aapt resource value: 0x7f070014
+			public const int video_chooser = 2131165204;
+			
+			// aapt resource value: 0x7f070000
+			public const int view_container = 2131165184;
+			
+			// aapt resource value: 0x7f070003
+			public const int youtube_fragment = 2131165187;
+			
+			// aapt resource value: 0x7f07000a
+			public const int youtube_version_text = 2131165194;
+			
+			// aapt resource value: 0x7f07000e
+			public const int youtube_view = 2131165198;
 			
 			static Id()
 			{
@@ -153,13 +189,22 @@ namespace YouTubeDemo
 			public const int FullScreen = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int list_item = 2130903043;
+			public const int Intents = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int PlayerView = 2130903044;
+			public const int list_item = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int StandAlone = 2130903045;
+			public const int PlayerControls = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int PlayerControlsContainer = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int PlayerView = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int StandAlone = 2130903048;
 			
 			static Layout()
 			{
@@ -183,6 +228,12 @@ namespace YouTubeDemo
 			// aapt resource value: 0x7f050008
 			public const int autoplay = 2131034120;
 			
+			// aapt resource value: 0x7f05001a
+			public const int chromeless = 2131034138;
+			
+			// aapt resource value: 0x7f050018
+			public const int def = 2131034136;
+			
 			// aapt resource value: 0x7f05000c
 			public const int enter_fullscreen = 2131034124;
 			
@@ -195,11 +246,26 @@ namespace YouTubeDemo
 			// aapt resource value: 0x7f050000
 			public const int hello = 2131034112;
 			
+			// aapt resource value: 0x7f050010
+			public const int intent_disabled = 2131034128;
+			
+			// aapt resource value: 0x7f05000f
+			public const int intent_select = 2131034127;
+			
 			// aapt resource value: 0x7f05000d
 			public const int landscape_fullscreen = 2131034125;
 			
 			// aapt resource value: 0x7f050009
 			public const int lightbox_mode = 2131034121;
+			
+			// aapt resource value: 0x7f050019
+			public const int minimal = 2131034137;
+			
+			// aapt resource value: 0x7f050014
+			public const int pause = 2131034132;
+			
+			// aapt resource value: 0x7f050013
+			public const int play = 2131034131;
 			
 			// aapt resource value: 0x7f050005
 			public const int play_playlist = 2131034117;
@@ -207,11 +273,20 @@ namespace YouTubeDemo
 			// aapt resource value: 0x7f050004
 			public const int play_video = 2131034116;
 			
+			// aapt resource value: 0x7f050017
+			public const int player_style = 2131034135;
+			
 			// aapt resource value: 0x7f050003
 			public const int playerfragment_text = 2131034115;
 			
 			// aapt resource value: 0x7f050002
 			public const int playerview_text = 2131034114;
+			
+			// aapt resource value: 0x7f050016
+			public const int seconds = 2131034134;
+			
+			// aapt resource value: 0x7f050015
+			public const int skip_to = 2131034133;
 			
 			// aapt resource value: 0x7f050006
 			public const int start_index = 2131034118;
@@ -219,12 +294,40 @@ namespace YouTubeDemo
 			// aapt resource value: 0x7f050007
 			public const int start_time = 2131034119;
 			
+			// aapt resource value: 0x7f050011
+			public const int youtube_currently_installed = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int youtube_not_installed = 2131034130;
+			
 			static String()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int BlackNoBarsTheme = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int BlackNoTitleBarTheme = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int OverlayActionBarTheme = 2131099650;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
