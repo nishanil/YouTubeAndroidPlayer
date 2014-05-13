@@ -1,12 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿/*
+ *  Ported to C# by Nish Anil, Xamarin (@nishanil on twitter)
+ * 
+ * Copyright 2012 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+using System;
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Views;
 using Android.Widget;
 using Google.YouTube.Player;
 
@@ -16,8 +28,8 @@ namespace YouTubeDemo
 	public class StandAloneActivity : Activity
 
 	{
-		private static  int REQ_START_STANDALONE_PLAYER = 1;
-		private static  int REQ_RESOLVE_SERVICE_MISSING = 2;
+		private const int RegStartStandalonePlayer= 1;
+		//private static  int REQ_RESOLVE_SERVICE_MISSING = 2;
 
 		private static  String VIDEO_ID = "cdgQpa1pUUE";
 		private static  String PLAYLIST_ID =  "7E952A67F31C58A3";
@@ -42,7 +54,7 @@ namespace YouTubeDemo
 			autoplay = autoplayCheckBox.Checked;
 			lightboxMode = lightboxModeCheckBox.Checked;
 			var intent = YouTubeStandalonePlayer.CreateVideoIntent (this, DeveloperKey.Key, id, startTimeMillis, autoplay, lightboxMode);
-			StartActivityForResult (intent, REQ_START_STANDALONE_PLAYER);
+			StartActivityForResult (intent, RegStartStandalonePlayer);
 		}
 
 		protected override void OnCreate (Bundle bundle)
@@ -67,7 +79,7 @@ namespace YouTubeDemo
 		protected override void OnActivityResult (int requestCode, Result resultCode, Intent data)
 		{
 			base.OnActivityResult (requestCode, resultCode, data);
-			if (requestCode == REQ_START_STANDALONE_PLAYER && resultCode != Result.Ok) {
+			if (requestCode == RegStartStandalonePlayer && resultCode != Result.Ok) {
 				YouTubeInitializationResult errorReason =
 					YouTubeStandalonePlayer.GetReturnedInitializationResult (data);
 				if (errorReason.IsUserRecoverableError) {
