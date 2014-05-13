@@ -6,10 +6,12 @@ The YouTube Android Player API enables you to incorporate video playback functio
 Using the API, you can load or cue videos into a player view embedded in your application's UI. You can then control playback programmatically. For example, you can play, pause, or seek to a specific point in the currently loaded video.
 
 You can also register event listeners to get callbacks for certain events, such as the player loading a video or the player state changing. Finally, the API has helper functionality to support orientation changes as well as transitions to fullscreen playback.
-
+![YouTube Screen1 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot1.png)
+![YouTube Screen2 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot2.png)
+![YouTube Screen3 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot3.png)
+![YouTube Screen4 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot4.png)
 
 # Samples:
-
 
 ### Simple PlayerView
 
