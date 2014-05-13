@@ -53,10 +53,11 @@ Solution contains two projects:
 
 Java Samples and YouTube Android Player API is [here](https://developers.google.com/youtube/android/player/downloads/)
 
-### Before running the project
+## Before running the project
 
 - Make sure you get a developer key from Google: https://developers.google.com/youtube/android/player/register
 - Add the Public Access API key to the class DeveloperKey.cs class
+- Connect an Android device running version 4.2.16 or later of the YouTube app.
 
 ### TODO:
 
