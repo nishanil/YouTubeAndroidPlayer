@@ -9,8 +9,8 @@ You can also register event listeners to get callbacks for certain events, such 
 
 ![YouTube Screen1 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot1.png)
 ![YouTube Screen2 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot2.png)
-![YouTube Screen3 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot3.png)
 ![YouTube Screen4 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot4.png)
+![YouTube Screen3 ](https://raw.githubusercontent.com/nishanil/YouTubeAndroidPlayer/master/ScreenShots/ScreenShot3.png)
 
 # Samples:
 
@@ -54,7 +54,7 @@ Solution contains two projects:
 - YouTube Android Player API for Xamarin.Android. (YouTubeApi)
 - Samples (again a port from Java) (YouTubeDemo)
 
-Java Samples and YouTube Android Player API is [here](https://developers.google.com/youtube/android/player/downloads/)
+Original Java Samples and YouTube Android Player API can be found [here](https://developers.google.com/youtube/android/player/downloads/)
 
 ## Running the project
 
