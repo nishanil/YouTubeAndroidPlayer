@@ -1,4 +1,4 @@
-YouTube Android Player 
+YouTube Android Player for Xamarin.Android
 =======================
 
 The YouTube Android Player API enables you to incorporate video playback functionality into your Android applications. The API defines methods for loading and playing YouTube videos (and playlists) and for customizing and controlling the video playback experience.
