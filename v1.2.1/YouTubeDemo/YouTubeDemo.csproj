@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33DAE70E-9DE1-46EF-9AB3-2D59C7BF2B3E}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>YouTubeDemo</RootNamespace>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>YouTubeDemo</AssemblyName>
+    <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <ReleaseVersion>1.2.1</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DeveloperKey.cs" />
+    <Compile Include="Screens\FullScreenActivity.cs" />
+    <Compile Include="Screens\FragmentActivity.cs" />
+    <Compile Include="Screens\PlayerViewActivity.cs" />
+    <Compile Include="Screens\StandAloneActivity.cs" />
+    <Compile Include="Screens\YouTubeFailureRecoveryActivity.cs" />
+    <Compile Include="Screens\YouTubeApiDemoActivity.cs" />
+    <Compile Include="Screens\Adapters\YouTubeApiDemoAdapter.cs" />
+    <Compile Include="Screens\ActionBarActivity.cs" />
+    <Compile Include="Screens\IntentsActivity.cs" />
+    <Compile Include="Screens\Adapters\IntentsAdapter.cs" />
+    <Compile Include="Screens\PlayerControlsActivity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\StandAlone.axml" />
+    <AndroidResource Include="Resources\layout\PlayerView.axml" />
+    <AndroidResource Include="Resources\layout\Fragments.axml" />
+    <AndroidResource Include="Resources\layout\FullScreen.axml" />
+    <AndroidResource Include="Resources\layout\list_item.axml" />
+    <AndroidResource Include="Resources\values\Colors.xml" />
+    <AndroidResource Include="Resources\layout\ActionBar.axml" />
+    <AndroidResource Include="Resources\layout-land\PlayerView.axml" />
+    <AndroidResource Include="Resources\layout-land\Fragments.axml" />
+    <AndroidResource Include="Resources\layout\Intents.axml" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values-v11\Styles.xml" />
+    <AndroidResource Include="Resources\layout\PlayerControls.axml" />
+    <AndroidResource Include="Resources\layout\PlayerControlsContainer.axml" />
+    <AndroidResource Include="Resources\layout-land\PlayerControls.axml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\YouTubeApi\YouTubeApi.csproj">
+      <Project>{A4CA43B8-7140-4483-96BA-6AFC8E935470}</Project>
+      <Name>YouTubeApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screens\" />
+    <Folder Include="Screens\Adapters\" />
+    <Folder Include="Resources\values-v11\" />
+  </ItemGroup>
+</Project>

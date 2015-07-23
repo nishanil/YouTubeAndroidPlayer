@@ -1,0 +1,13 @@
+﻿<metadata>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.google.android.youtube.player']" name="managedName">Google.YouTube.Player</attr>
+  
+  <remove-node path="/api/package[@name='com.google.android.youtube.player']/class[@name='YouTubePlayerView']/method[@name='onConfigurationChanged' and count(parameter)=1 and parameter[1][@type='android.content.res.Configuration']]" />
+  <remove-node path="/api/package[@name='com.google.android.youtube.player']/class[@name='YouTubeThumbnailView']/method[@name='finalize' and count(parameter)=0]" />
+</metadata>
