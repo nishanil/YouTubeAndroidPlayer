@@ -20,7 +20,7 @@ namespace YouTubeDemo
 {
 	public static class DeveloperKey
 	{
-		public static string Key = "AIzaSyAvceGcVyAshDGTjQQwPbFH3NpD3I8VLxA";
+		public static string Key = "";
 	}
 }
 
