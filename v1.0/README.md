@@ -1,3 +1,6 @@
+# Version : 1.0
+Supports: Android 4.0.3 and above.
+
 YouTube Android Player for Xamarin.Android
 =======================
 
